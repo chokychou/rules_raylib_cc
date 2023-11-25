@@ -27,7 +27,7 @@ rules_foreign_cc_dependencies()
 _ALL_CONTENT = """\
 filegroup(
     name = "all_srcs",
-    srcs = glob(["**"]),
+    srcs = glob(["src/**"]),
     visibility = ["//visibility:public"],
 )
 """
