@@ -1,23 +1,14 @@
-#include "raylib.h"
+#include "//raylib/src/raylib.h"
 
-
-int main(int argc, char* argv[])
+int main(void)
 {
-    int screenWidth = 800;
-    int screenHeight = 450;
+    InitWindow(800, 450, "raylib [core] example - basic window");
 
-    InitWindow(screenWidth, screenHeight, "Hello, World!");
-
-    SetTargetFPS(60);
-    
     while (!WindowShouldClose())
     {
         BeginDrawing();
-
-        ClearBackground(RAYWHITE);
-
-        DrawText("Hello, World!", 190, 200, 20, BLACK);
-
+            ClearBackground(RAYWHITE);
+            DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
         EndDrawing();
     }
 
